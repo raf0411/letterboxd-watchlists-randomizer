@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root{
+  --dark-blue-clr-500: #14181c;
+  --dark-blue-clr-300: #1f262d;
+  --green-clr-500: #009d1a;
+  --link-clr: #ffffdb;
+
+  --fw-bold: 700;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #FFF;
+  font-size: 1rem;
+  background: var(--dark-blue-clr-300);
+  padding-bottom: 5rem;
+}
+
+nav{
+  max-height: 500px;
+  padding: 1rem 0 1.5rem 0;
+  background: var(--dark-blue-clr-500);
+  display: grid;
+  place-items: center;
+}
+
+input[type="file"]{
+  display: none;
+}
+.logo{
+  width: 350px;
+}
+
+nav p{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
+}
+
+.add-watchlist-btn, .randomize-btn{
+  border: none;
+  background: var(--green-clr-500);
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  padding: .5rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.add-watchlist-btn:hover, .randomize-btn:hover{
+  opacity: .9;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.movies{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  row-gap: 5rem;
+}
+
+.movie-container, .chosen-movie-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.movie-container .movie-title, .chosen-movie-container .movie-title{
+  max-width: 200px;
+}
+
+.movie-container .movie-poster, .chosen-movie-container .movie-poster{
+  width: 200px;
+  object-fit: contain;
+  border: 8px solid var(--dark-blue-clr-500);
+  border-radius: 8px;
+}
+
+.error-lbl{
+  color: red;
+  font-size: 1.1rem;
+}
+
+.get-watchlist{
+  color: var(--link-clr);
+  text-decoration: underline;
+  transition: .2s;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+}
+
+.get-watchlist:hover{
+  opacity: .7;
+}

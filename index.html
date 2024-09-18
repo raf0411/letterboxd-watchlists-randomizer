@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randomize Watchlist - Letterboxd</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+        <a href="">
+          <img class="logo" src="./imgs/letterboxd-logo.svg" alt="LOGO" />
+        </a>
+        <p>Watchlist Randomizer</p>
+    </nav>
+
+    <main>
+      
+      <div class="btn-container">
+        <a href="https://letterboxd.com/settings/data/" class="get-watchlist">
+          Get your watchlists here
+        </a>
+        <label class="add-watchlist-btn" for="watchlist">
+          <input  type="file" name="watchlist" id="watchlist" accept=".csv">
+          Add Watchlists CSV
+        </label>
+
+        <p class="error-lbl">
+
+        </p>
+
+        <div class="chosen-movie">
+
+        </div>
+
+        <button class="randomize-btn" id="randomize">
+          Randomize
+        </button>
+      </div>
+
+      <div class="movies">
+        
+      </div>
+
+      <p id="output"></p>
+    </main>
+  </body>
+</html>
